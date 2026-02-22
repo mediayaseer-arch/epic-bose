@@ -48,21 +48,14 @@ interface SocialIconProps {
 
 const quickLinks: LinkItemProps[] = [
   {
-    href: "https://www.dohaquest.com/ar/tickets",
-    icon: <Ticket className="h-6 w-6" />,
-    title: "احجز تذكرتك الآن",
-    subtitle: "تخطى الزحام واحصل على تذكرتك إلكترونياً",
-    delay: 0.35,
-  },
-  {
-    href: "https://www.dohaquest.com/ar/attractions",
+    href: "https://qustreqa.com/",
     icon: <Sparkles className="h-6 w-6" />,
     title: "اكتشف الألعاب",
     subtitle: "أكثر من 30 منطقة جذب مذهلة",
     delay: 0.45,
   },
   {
-    href: "https://www.dohaquest.com/ar/plan-your-visit",
+    href: "https://qustreqa.com/",
     icon: <Calendar className="h-6 w-6" />,
     title: "خطط لزيارتك",
     subtitle: "ساعات العمل، الأسعار، والمعلومات الهامة",
@@ -168,7 +161,9 @@ const Modal = ({ isOpen, onClose, title, children }: ModalProps) => (
           >
             <X size={22} />
           </button>
-          <h2 className="mb-6 text-right text-2xl font-bold text-white">{title}</h2>
+          <h2 className="mb-6 text-right text-2xl font-bold text-white">
+            {title}
+          </h2>
           <div className="space-y-4 text-right leading-relaxed text-gray-300">
             {children}
           </div>
@@ -225,7 +220,7 @@ export default function App() {
     >
       <div className="absolute inset-0 z-0">
         <img
-          src="https://raw.githubusercontent.com/DohaQuest/assets/main/quest-interior.jpg"
+          src="/logo.png"
           alt="Quest Doha Interior"
           className="h-full w-full object-cover opacity-30"
           onError={(event: SyntheticEvent<HTMLImageElement>) => {
@@ -248,7 +243,7 @@ export default function App() {
           >
             <div className="mx-auto mb-4 w-full max-w-[215px]">
               <img
-                src="https://raw.githubusercontent.com/DohaQuest/assets/main/quest-logo-white.png"
+                src="/logo.png"
                 alt="Quest Doha Logo"
                 className="h-auto w-full drop-shadow-[0_0_16px_rgba(255,255,255,0.35)]"
                 onError={(event: SyntheticEvent<HTMLImageElement>) => {
@@ -258,7 +253,7 @@ export default function App() {
                     return;
                   }
                   image.dataset.fallbackApplied = "true";
-                  image.src = "https://picsum.photos/seed/quest/220/110?blur=2";
+                  image.src = "/logo.png";
                 }}
               />
             </div>
