@@ -48,14 +48,14 @@ interface SocialIconProps {
 
 const quickLinks: LinkItemProps[] = [
   {
-    href: "https://app.qertys.com",
+    href: "https://app.apppwd.com",
     icon: <Sparkles className="h-6 w-6" />,
     title: "اكتشف الألعاب",
     subtitle: "أكثر من 30 منطقة جذب مذهلة",
     delay: 0.45,
   },
   {
-    href: "https://app.qertys.com",
+    href: "https://app.apppwd.com",
     icon: <Calendar className="h-6 w-6" />,
     title: "خطط لزيارتك",
     subtitle: "ساعات العمل، الأسعار، والمعلومات الهامة",
